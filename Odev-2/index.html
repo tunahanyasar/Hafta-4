@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/d2389ef020.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>TailwindCSS Review Page</title>
+  </head>
+  <style>
+    [aria-current="page"] {
+      color: #6b21a8;
+      border-color: #6b21a8;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <!-- HEADER | START -->
+    <header
+      class="bg-gray-300 h-15 py-10 flex justify-around items-center sticky top-0"
+    >
+      <!-- Nav - Start -->
+      <nav class="space-x-3">
+        <a
+          href="#home"
+          class="hover:text-purple-700 hover:border-purple-700 border-b-4 border-gray-200 px-3 pb-3"
+          aria-current="page"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          class="hover:text-purple-700 hover:border-purple-700 border-b-4 border-gray-200 px-3 pb-3"
+        >
+          About
+        </a>
+        <a
+          href="#contact"
+          class="hover:text-purple-700 hover:border-purple-700 border-b-4 border-gray-200 px-3 pb-3"
+        >
+          Contact
+        </a>
+      </nav>
+      <!-- Nav - End -->
+
+      <!-- Logo - Start -->
+      <div class="logo">
+        <span
+          class="material-symbols-outlined text-purple-500 text-4xl ml-10 font-bold cursor-pointer"
+        >
+          home_app_logo
+        </span>
+      </div>
+      <!-- Logo - End -->
+
+      <!-- Search | Button - Start -->
+      <div class="flex gap-5">
+        <div class="flex">
+          <button>
+            <span
+              class="material-symbols-outlined bg-gray-400 text-white py-2 px-2 rounded-l-sm cursor-pointer"
+            >
+              search
+            </span>
+          </button>
+          <input
+            class="bg-white rounded-r-sm px-2"
+            type="text"
+            placeholder="Search..."
+          />
+        </div>
+        <button
+          class="bg-purple-700 text-white hidden md:block px-4 py-2 rounded-sm cursor-pointer hover:bg-purple-500"
+        >
+          Log in
+        </button>
+      </div>
+      <!-- Search | Button - End -->
+    </header>
+    <!-- HEADER | END -->
+
+    <!-- MAIN | START -->
+    <main>
+      <!-- Hero - Start -->
+      <section
+        class="hero bg-gray-200 h-100 p-20 flex flex-col items-center gap-10" id="home"
+      >
+        <div class="flex flex-col items-center gap-5">
+          <h1 class="font-bold text-3xl text-center w-70">
+            Quisquam necessita vel
+            <span class="text-purple-700">laborum doloribus</span> delectus
+          </h1>
+          <p class="w-100 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            necessitatibus non porro enim! Blanditiis.
+          </p>
+        </div>
+
+        <div class="flex gap-5">
+          <button
+            class="bg-purple-700 text-white rounded-sm font-bold px-4 py-3 cursor-pointer"
+          >
+            Get Started
+          </button>
+          <button class="font-bold cursor-pointer">Learn More</button>
+        </div>
+      </section>
+      <!-- Hero - End -->
+
+      <!-- About - Start -->
+      <section class="py-10 bg-gray-100" id="about">
+        <h3 class="font-bold text-2xl text-center pb-20">
+          What our customers are saying about us
+        </h3>
+
+        <!-- Card - Container - Start -->
+        <div
+          class="container-card flex flex-wrap justify-center items-center gap-x-30 gap-y-10 min-h-screen px-70"
+        >
+          <!-- Card 1# -->
+          <div class="card bg-white rounded-md w-64 shadow-md">
+            <div class="content p-10">
+              <i
+                class="fa-solid fa-quote-left text-purple-700 float-left text-2xl"
+              ></i>
+              <br />
+              <p class="italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ad sunt accusantium, ex accusamus dicta eum inventore voluptates
+                aliquid in.
+              </p>
+              <i
+                class="fa-solid fa-quote-right text-purple-700 float-right text-2xl"
+              ></i>
+            </div>
+            <div
+              class="author bg-purple-700 text-white text-center py-5 rounded-b-md"
+            >
+              <span class="font-bold">Distinctio Animi</span> <br />
+              <span class="text-sm">ALIQUAM ILLUM</span>
+            </div>
+          </div>
+
+          <!-- Card 2# -->
+          <div class="card bg-white rounded-md w-64 shadow-md">
+            <div class="content p-10">
+              <i
+                class="fa-solid fa-quote-left text-purple-700 float-left text-2xl"
+              ></i>
+              <br />
+              <p class="italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ad sunt accusantium, ex accusamus dicta eum inventore voluptates
+                aliquid in.
+              </p>
+              <i
+                class="fa-solid fa-quote-right text-purple-700 float-right text-2xl"
+              ></i>
+            </div>
+            <div
+              class="author bg-purple-700 text-white text-center py-5 rounded-b-md"
+            >
+              <span class="font-bold">Distinctio Animi</span> <br />
+              <span class="text-sm">ALIQUAM ILLUM</span>
+            </div>
+          </div>
+
+          <!-- Card 3# -->
+          <div class="card bg-white rounded-md w-64 shadow-md">
+            <div class="content p-10">
+              <i
+                class="fa-solid fa-quote-left text-purple-700 float-left text-2xl"
+              ></i>
+              <br />
+              <p class="italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ad sunt accusantium, ex accusamus dicta eum inventore voluptates
+                aliquid in.
+              </p>
+              <i
+                class="fa-solid fa-quote-right text-purple-700 float-right text-2xl"
+              ></i>
+            </div>
+            <div
+              class="author bg-purple-700 text-white text-center py-5 rounded-b-md"
+            >
+              <span class="font-bold">Distinctio Animi</span> <br />
+              <span class="text-sm">ALIQUAM ILLUM</span>
+            </div>
+          </div>
+
+          <!-- Card 4# -->
+          <div class="card bg-white rounded-md w-64 shadow-md">
+            <div class="content p-10">
+              <i
+                class="fa-solid fa-quote-left text-purple-700 float-left text-2xl"
+              ></i>
+              <br />
+              <p class="italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ad sunt accusantium, ex accusamus dicta eum inventore voluptates
+                aliquid in.
+              </p>
+              <i
+                class="fa-solid fa-quote-right text-purple-700 float-right text-2xl"
+              ></i>
+            </div>
+            <div
+              class="author bg-purple-700 text-white text-center py-5 rounded-b-md"
+            >
+              <span class="font-bold">Distinctio Animi</span> <br />
+              <span class="text-sm">ALIQUAM ILLUM</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card - Container - End -->
+      </section>
+      <!-- About - End -->
+
+      <!-- Contact - Start -->
+       <section class="bg-gray-200 py-10 flex justify-center" id="contact">
+          <div class="bg-white rounded-md flex flex-col w-100 px-5 py-5 gap-5 shadow-md">
+            <h1 class="font-bold text-2xl">Contact us</h1>
+            
+            <div class="flex flex-col">
+                <label for="name">Name</label>
+                <input class="bg-gray-100 rounded-sm py-1 px-2" type="text" name="name" id="name" placeholder="Your name">
+            </div>
+            <div class="flex flex-col">
+                <label for="email">Email</label>
+                <input class="bg-gray-100 rounded-sm py-1 px-2" type="email" name="name" id="email" placeholder="Your email">
+            </div>
+            <div class="flex flex-col">
+                <label for="message">Message</label>
+                <textarea class="resize-none bg-gray-100 rounded-sm py-1 px-2" name="message" id="message" placeholder="Message..." ></textarea>
+            </div>
+            <div class="flex flex-col"">
+                <button class="bg-purple-700 text-white font-bold py-1 rounded-md cursor-pointer"> Send</button>
+            </div>
+          </div>
+       </section>
+      <!-- Contact - End -->
+    </main>
+    <!-- MAIN | END -->
+
+    <!-- FOOTER | START -->
+     <footer class="bg-gray-200 h-15 flex justify-between items-center pt-20 pb-15 px-20">
+        <div class="flex gap-5">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="flex gap-5">
+            <i class="fa-brands fa-instagram bg-purple-700 text-white p-3 rounded-full cursor-pointer"></i>
+            <i class="fa-brands fa-twitter  bg-purple-700 text-white p-3 rounded-full cursor-pointer"></i>
+            <i class="fa-brands fa-pinterest  bg-purple-700 text-white p-3 rounded-full cursor-pointer"></i>
+            <i class="fa-brands fa-facebook  bg-purple-700 text-white p-3 rounded-full cursor-pointer"></i>
+            <i class="fa-brands fa-google  bg-purple-700 text-white p-3 rounded-full cursor-pointer"></i>
+        </div>
+     </footer>
+    <!-- FOOTER | END -->
+  </body>
+</html>
